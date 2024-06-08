@@ -1,14 +1,14 @@
 import os
 
-chat_language = os.getenv("INIT_LANGUAGE", default = "zh")
+chat_language = os.getenv("INIT_LANGUAGE", default = "th")
 
 MSG_LIST_LIMIT = int(os.getenv("MSG_LIST_LIMIT", default = 7))
 LANGUAGE_TABLE = {
-  "zh": "哈囉！",
+  "th": "สวัสดี！",
   "en": "Hello!"
 }
 
-AI_GUIDELINES = '你是一個AI助教，會用蘇格拉底教學法代替老師初步回應，如果有需要會提醒學生跟老師確認'
+AI_GUIDELINES = 'คุณเป็น AI ที่ช่วยสอน เพื่อใช้วิธีการสอนของโซคราตีสแทนการตอบกลับเบื้องต้นของครู และจะแจ้งให้นักเรียนติดต่อครูเพื่อยืนยัน ถ้าจำเป็น'
 
 class Prompt:
     def __init__(self):
